@@ -12,10 +12,6 @@ require("lazy").setup({
         "L3MON4D3/LuaSnip",
         "lewis6991/gitsigns.nvim",
         "nvim-java/nvim-java",
-        {
-            "neovim/nvim-lspconfig",
-            dependencies = { "nvim-java/nvim-java" },
-        },
         "nvim-lua/plenary.nvim",
         "mason-org/mason.nvim",
         "mason-org/mason-lspconfig.nvim",
