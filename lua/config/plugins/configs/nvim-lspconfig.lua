@@ -18,6 +18,14 @@ return {
                 },
             },
         })
+        vim.lsp.enable("tilt_ls")
+        vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+            group = vim.api.nvim_create_augroup("TiltfileDetection", { clear = true }),
+            pattern = { "Tiltfile", "Tiltfile.*" },
+            callback = function()
+                vim.bo.filetype = "tiltfile"
+            end,
+        })
     end,
     dependencies = { "nvim-java/nvim-java" },
 }

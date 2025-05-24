@@ -24,6 +24,6 @@ return {
             highlight = { enable = true },
             indent = { enable = true },
         })
-        vim.treesitter.language.register("starlark", "Tiltfile")
+        vim.treesitter.language.register("starlark", "tiltfile")
     end,
 }
